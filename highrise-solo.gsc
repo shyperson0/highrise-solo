@@ -23,7 +23,6 @@ custom_springpad_count_watcher( is_generator ){
 		level notify( "sq_pts_springad_count" + n_count );
 		wait 1;
 	}
-	level iPrintLnBold("sq_pts_springpad_count4 notified");
 }
 
 //Hopefully working Springpad count skip 
@@ -31,7 +30,6 @@ custom_wait_for_all_springpads_placed( str_type, str_flag ){
 	//str_type is basically useless, but has to be kept as other functions will call with an str_type
 	while ( !flag( str_flag ) )	{
 		flag_set( str_flag );
-		iPrintLnBold("PTS count skip");
 		wait 1;
 	}
 }
